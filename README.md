@@ -84,6 +84,11 @@ The pipeline extracts operational hotel records and guest feedback from a Postgr
 ---
 
 ### 4. Notebook 3: Topic Modelling (`notebook/03_topic_modelling.ipynb`)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/earlchirchir/Guest-Experience-Analytics/blob/main/notebook/03_topic_modelling.ipynb)
+
+*As demonstrated in the drop-in session, execute this notebook using Google Colab with GPU hardware acceleration (T4 GPU) for fast transformer embedding generation and BERTopic clustering.*
+
 - **Corpus Ingestion**: Loads `data/processed/montra_cleaned_data.csv` and converts `cleaned_review_text` into document lists.
 - **Geographic Entity Stripping**: Removes UK city names (`London`, `Manchester`, `Edinburgh`, `Birmingham`, `Leeds`, `Bristol`, `Liverpool`, `Glasgow`, etc.) using regex so that discovered topic clusters focus on hotel service quality and operational touchpoints rather than geographic location.
 - **Duplicate & Vocabulary Audit**: Standardizes review cases, calculates duplicate rates with `Counter`, and measures total vocabulary size.
