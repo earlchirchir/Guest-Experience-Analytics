@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+mlruns/
+mlflow.db
+.DS_Store
+
+# Environment and sensitive credentials
+.env
+*.env
+*.pem
+*.key
+*.docx
